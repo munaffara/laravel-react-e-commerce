@@ -30,6 +30,8 @@ function Navbar() {
             </div>
           </div>
         </div>
+
+        {/* loggin user */}
         {user && <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
@@ -51,6 +53,8 @@ function Navbar() {
           </ul>
         </div>}
 
+        
+        {/* not loggin user */}
         {!user && <>
         <Link href={route('login')} className="btn">Login</Link>
         <Link href={route('register')} className="btn btn-primary">Register</Link>
