@@ -53,7 +53,7 @@ function Navbar() {
           </ul>
         </div>}
 
-        
+
         {/* not loggin user */}
         {!user && <>
         <Link href={route('login')} className="btn">Login</Link>
